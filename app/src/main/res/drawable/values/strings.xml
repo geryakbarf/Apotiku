@@ -22,4 +22,65 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    //Activity Main
+    <string name="welcome">Selamat Datang di Aplikasi Apotiku</string>
+    <string name="welcome2">Anda Harus Login Untuk Menggunakan Aplikasi Ini</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    //Activity Daftar Obat
+    <string name="daftarobat">Daftar Obat</string>
+    <string name="semua">Semua Obat</string>
+    <string name="batuk">Obat Batuk</string>
+    <string name="demam">Obat Demam</string>
+    <string name="flu">Obat Flu</string>
+    <string name="pusing">Obat Pusing</string>
+    <string name="maag">Obat Maag</string>
+    <string name="perut">Obat Sakit Perut</string>
+    <string name="luar">Obat Luar</string>
+    <string name="lain">Lain - Lain</string>
+
+    //Activity Login
+    <string name="un">Username</string>
+    <string name="pw">Password</string>
+    <string name="lupa">Lupa Password ?</string>
+    <string name="tidakakun">Tidak Punya Akun ? Daftar</string>
+
+    //Activity Pegawai
+    <string name="menup">Menu Pegawai</string>
+    <string name="lihatp">Lihat Pegawai</string>
+    <string name="tambahp">Tambah Pegawai</string>
+    <string name="carip">Cari Pegawai</string>
+
+    //Activity Register
+    <string name="daftar">Daftar Apotik</string>
+    <string name="namaa">Nama Apotik</string>
+    <string name="ida">ID Apotik</string>
+    <string name="alamata">Alamat Apotik</string>
+    <string name="sudahpunya">Sudah Punya Akun ? Masuk</string>
+    <string name="lengkapi">Lengkapi Data Pengguna Pertama</string>
+    <string name="namap">Nama Lengkap</string>
+    <string name="nokon">Nomor Kontak</string>
+    <string name="confirm">Konfirmasi Password</string>
+    <string name="upfoto">Upload Photo</string>
+
+    //Activiti User
+    <string name="selamat">Selamat Datang</string>
+    <string name="tambaho">Tambah Obat</string>
+    <string name="riwayat">Riwayat Penjualan</string>
+    <string name="pegawai">Pegawai</string>
+    <string name="cario">Cari Obat</string>
+    <string name="keluar">Keluar</string>
+    <string name="khasiat">Khasiat :</string>
+    <string name="sisa">Sisa Stok :</string>
+    <string name="rp">Rp.</string>
+
+    //Tambah Obat
+    <string name="tambahg">Tambah Gambar</string>
+    <string name="namao">Nama Obat</string>
+    <string name="hargao">Harga Obat</string>
+    <string name="stoko">Stok</string>
+    <string name="zato">Zat Aktif</string>
+    <string name="khasiato">Khasiat Obat</string>
 </resources>

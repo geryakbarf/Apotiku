@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "453560057825",
+    "firebase_url": "https://apotiku-b27e1.firebaseio.com",
+    "project_id": "apotiku-b27e1",
+    "storage_bucket": "apotiku-b27e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453560057825:android:15fa452847725d31",
+        "android_client_info": {
+          "package_name": "apotik.pbo2.apotiku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453560057825-s2g9puf18gag5o2rp0hbjmsch43ompga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apotik.pbo2.apotiku",
+            "certificate_hash": "5475ecc68ea064eb18bb4258521058b7ab7e9582"
+          }
+        },
+        {
+          "client_id": "453560057825-p2cc4jq0gdsihva9k0d7epk156abh5uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWfpYWcbi1ku_2u2QcWkCpczWw3_l9vU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453560057825-p2cc4jq0gdsihva9k0d7epk156abh5uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

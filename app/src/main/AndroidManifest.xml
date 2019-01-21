@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apotik.pbo2.apotiku">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Login_Register.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login_Register.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tambah_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Daftar_Obat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Obat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Batuk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Demam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Flu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Pusing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Maag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Sakit_Perut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Luar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Baca_Lain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login_Register.Register_Pengguna"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pegawai.Pegawai"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pegawai.Lihat_Pegawai"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pegawai.Tambah_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Baca.Edit_Data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pegawai.Edit_Pegawai"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pengaturan.Main_Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pengaturan.Akun_Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pengaturan.Apotik_Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Akun_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Baca.Cari_Obat" />
+    </application>
+
+</manifest>

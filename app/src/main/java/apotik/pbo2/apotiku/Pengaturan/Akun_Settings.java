@@ -11,22 +11,28 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
 
+import apotik.pbo2.apotiku.Akun_Activity;
 import apotik.pbo2.apotiku.R;
 import apotik.pbo2.apotiku.Request.Update_Pass_Request;
 import apotik.pbo2.apotiku.SharedPreffrence.Session1;
 
 public class Akun_Settings extends AppCompatActivity implements View.OnClickListener {
 
-    EditText txt_Namaku, txt_Kontak,txt_Passlama,txt_Passbaru;
+    EditText txt_Passlama,txt_Passbaru;
     String idUser;
     Session1 session1;
     ProgressDialog progressDialog;
@@ -40,13 +46,29 @@ public class Akun_Settings extends AppCompatActivity implements View.OnClickList
         session1= new Session1(this);
         HashMap<String,String> user=session1.getUserDetails();
         idUser=user.get(session1.KEY_USERNAME);
-        txt_Namaku=findViewById(R.id.txt_Namaku);
-        txt_Kontak=findViewById(R.id.txt_Kontak);
         txt_Passbaru=findViewById(R.id.txt_Passbaru);
         txt_Passlama=findViewById(R.id.txt_Passlama);
         progressDialog = new ProgressDialog(this);
         bt_UbahPass=findViewById(R.id.bt_UbahPass);
         bt_UbahPass.setOnClickListener(this);
+
+    }
+
+
+    public class Akun_Request extends StringRequest {
+        private static final String AKUN_REQUEST_URL = "https://debruyne.000webhostapp.com/get_akun.php";
+        private Map<String, String> params;
+
+        public Akun_Request(String Username, Response.Listener<String> listener){
+            super(Request.Method.POST, AKUN_REQUEST_URL, listener, null);
+            params = new HashMap<>();
+            params.put("Username",Username);
+        }
+        @Override
+        public Map<String, String> getParams(){
+            return params;
+        }
+
     }
 
 

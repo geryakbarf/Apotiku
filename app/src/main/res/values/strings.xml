@@ -1,6 +1,7 @@
 <resources>
     //Pengaturan
 
+    <string name="total">Total Harga : </string>
     <string name="ubahp">Ubah Password</string>
     <string name="passlama">Masukkan Password Lama</string>
     <string name="passbaru">Masukkan Password Baru</string>

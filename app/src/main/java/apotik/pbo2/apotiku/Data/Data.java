@@ -4,11 +4,13 @@ public class Data {
     String idGambar;
     String namaPegawai;
     String nomorKontak;
+    String username;
 
-    public Data(String idGambar, String namaPegawai, String nomorKontak){
+    public Data(String idGambar, String namaPegawai, String nomorKontak, String username){
         this.idGambar=idGambar;
         this.namaPegawai=namaPegawai;
         this.nomorKontak=nomorKontak;
+        this.username=username;
     }
 
     public String getIdGambar() {
@@ -21,5 +23,9 @@ public class Data {
 
     public String getNomorKontak() {
         return nomorKontak;
+    }
+
+    public String getUsername() {
+        return username;
     }
 }

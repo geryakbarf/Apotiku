@@ -1,10 +1,12 @@
 package apotik.pbo2.apotiku.Pegawai;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -23,8 +25,9 @@ import apotik.pbo2.apotiku.Data.Data;
 import apotik.pbo2.apotiku.R;
 import apotik.pbo2.apotiku.Request.Lihat_Request;
 import apotik.pbo2.apotiku.SharedPreffrence.Session1;
+import apotik.pbo2.apotiku.UserActivity;
 
-public class Lihat_Pegawai extends AppCompatActivity {
+public class Lihat_Pegawai extends AppCompatActivity implements View.OnClickListener {
 
     RecyclerView recyclerView;
     MyAdapter adapter;
@@ -59,7 +62,8 @@ public class Lihat_Pegawai extends AppCompatActivity {
                     JSONArray array = new JSONArray(response);
                     for (int i=0; i< array.length(); i++){
                         JSONObject ob = array.getJSONObject(i);
-                        Data data = new Data(ob.getString("IdGambar"),ob.getString("Nama"),ob.getString("Nomor"));
+                        Data data = new Data(ob.getString("IdGambar"),ob.getString("Nama"),ob.getString("Nomor"),
+                                ob.getString("Username"));
                         list.add(data);
                     }
                     recyclerView.setAdapter(adapter);
@@ -71,5 +75,17 @@ public class Lihat_Pegawai extends AppCompatActivity {
         Lihat_Request lihat_request = new Lihat_Request(idApotik, listener);
         RequestQueue requestQueue = Volley.newRequestQueue(Lihat_Pegawai.this);
         requestQueue.add(lihat_request);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), UserActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

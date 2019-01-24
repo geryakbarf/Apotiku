@@ -38,7 +38,7 @@ public class Baca_Batuk extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         ab.setTitle("Obat Batuk");
         setContentView(R.layout.activity_baca__obat);
-        rv=(RecyclerView) findViewById(R.id.recyclerview);
+        rv=findViewById(R.id.recyclerview);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(this));
         list_data=new ArrayList<>();
@@ -47,6 +47,7 @@ public class Baca_Batuk extends AppCompatActivity {
         HashMap<String,String> user=session1.getUserDetails();
         idApotik = user.get(session1.KEY_IDAPOTIK);
         jenis = "Obat Batuk";
+        getObat();
 
     }
 

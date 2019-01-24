@@ -53,7 +53,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView t_Nama, t_Jenis, t_Zat, t_Khasiat, t_Stok, t_Harga, bt_Ubah;
-        private ImageView image,cart;
+        private ImageView image;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -65,8 +65,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             t_Stok =  itemView.findViewById(R.id.t_Stok);
             t_Harga = itemView.findViewById(R.id.t_Harga);
             bt_Ubah=itemView.findViewById(R.id.bt_Ubah);
-            cart=itemView.findViewById(R.id.cart);
-            cart.setOnClickListener(this);
             bt_Ubah.setOnClickListener(this);
         }
 

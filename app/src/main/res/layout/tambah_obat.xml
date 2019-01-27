@@ -30,16 +30,14 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="vertical"
-        android:layout_marginRight="25dp">
+        >
 
         <EditText
             android:id="@+id/et_Nama"
-            android:layout_width="338dp"
+            android:layout_width="310dp"
             android:layout_height="55dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="25dp"
-            android:ems="10"
             android:hint="@string/namao"
             android:inputType="textPersonName" />
     </LinearLayout>
@@ -56,13 +54,12 @@
             android:layout_height="55dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:hint="@string/hargao"
             android:inputType="number" />
 
         <EditText
             android:id="@+id/et_Stok"
-            android:layout_width="83dp"
+            android:layout_width="79dp"
             android:layout_height="55dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -77,33 +74,30 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="vertical"
-        android:layout_marginRight="25dp">
+        >
 
         <EditText
             android:id="@+id/et_Zat"
-            android:layout_width="338dp"
+            android:layout_width="310dp"
             android:layout_height="55dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="25dp"
-            android:ems="10"
             android:hint="@string/zato"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="vertical"
-        android:layout_marginRight="25dp">
+     >
 
         <EditText
             android:id="@+id/et_Khasiat"
-            android:layout_width="338dp"
+            android:layout_width="310dp"
             android:layout_height="55dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="25dp"
-            android:ems="10"
             android:hint="@string/khasiato"
             android:inputType="textPersonName" />
     </LinearLayout>

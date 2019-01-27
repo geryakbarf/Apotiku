@@ -122,14 +122,6 @@
                 android:textColor="@color/white"
                 android:layout_alignParentRight="true"
                 android:background="@color/colorPrimary"/>
-            <ImageView
-                android:id="@+id/cart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_add_shopping_cart_black_24"
-                android:layout_toLeftOf="@id/bt_Ubah"
-                android:layout_below="@id/Harga"
-                android:layout_marginRight="13dp"/>
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
